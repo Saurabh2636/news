@@ -1,32 +1,31 @@
-import React from 'react'
-import Login from './component/Login'
-import Signup from './component/Signup'
-import Home from './component/Home'
-import { AuthProvider } from './component/context/AuthContaxt'
-import {Container} from 'react-bootstrap'
-import PrivateRoute from './component/PrivateRoute'
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import React from "react";
+import Login from "./component/Login";
+import Signup from "./component/Signup";
+import Contact from "./component/Contact/Contact";
+import National from "./component/National/National";
+import International from "./component/International/International";
+import { AuthProvider } from "./component/context/AuthContaxt";
+import Sport from "./component/Sports/Sports";
+import "./App.css";
+import PrivateRoute from "./component/PrivateRoute";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 const App = () => {
-  return (   
-    <Container
-    className='d-flex align-items-center justify-content-center'
-    style={{minHeight:'100vh'}}
-    >
-    <div className='w-100' style={{maxWidth:'500px'}}>
+  return (
+    <div>
       <Router>
-      <AuthProvider>
-        <Switch>
-           <Route exact path='/signup' component={Signup} />
-           <PrivateRoute exact path='/' component={Home} />
-           <Route exact path='/login' component={Login} />
-        </Switch>
-      </AuthProvider>
+        <AuthProvider>
+          <Switch>
+            <Route exact path="/signup" component={Signup} />
+            <Route exact path="/login" component={Login} />
+            <PrivateRoute exact path="/" component={National} />
+            <PrivateRoute exact path="/Int" component={International} />
+            <PrivateRoute exact path="/Contact" component={Contact} />
+            <PrivateRoute exact path="/Sport" component={Sport} />
+          </Switch>
+        </AuthProvider>
       </Router>
-      
     </div>
-    </Container>
-   
-  )
-}
+  );
+};
 
-export default App
+export default App;

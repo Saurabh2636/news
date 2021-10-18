@@ -1,5 +1,5 @@
 import React,{useRef, useState} from 'react'
-import {Form,Button,Card ,Alert} from 'react-bootstrap'
+import {Form,Button,Card ,Alert,Container} from 'react-bootstrap'
 import {useAuth} from './context/AuthContaxt'
 import {Link,useHistory} from 'react-router-dom'
 const Signup = () => {
@@ -27,7 +27,8 @@ const Signup = () => {
     }
     return (
         <>
-          <Card>
+        <Container style={{maxWidth:'80vh', marginTop:'25vh'}}>
+          <Card >
               <Card.Body>
                   <h2 className="text-center mb-4">Sign Up</h2>
                    
@@ -58,6 +59,7 @@ const Signup = () => {
           <div className= 'w-100 text-center mt-2'>
               Already have an account ?<Link to='/login'> Log in </Link>
           </div>
+          </Container>
         </>
     )
 }
