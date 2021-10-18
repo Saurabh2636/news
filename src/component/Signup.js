@@ -19,7 +19,7 @@ const Signup = () => {
         try{
             setError('')
             await signup(emailRef.current.value , PasswordRef.current.value)
-            history.push('/login')
+            history.push('/news/login')
         }
         catch{
             setError('Failed to create an account!!!')
@@ -57,7 +57,7 @@ const Signup = () => {
               </Card.Body>
           </Card>
           <div className= 'w-100 text-center mt-2'>
-              Already have an account ?<Link to='/login'> Log in </Link>
+              Already have an account ?<Link to='/news/login'> Log in </Link>
           </div>
           </Container>
         </>

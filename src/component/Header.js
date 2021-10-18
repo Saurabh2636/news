@@ -15,7 +15,7 @@ const Header = () => {
     setError("")
     try {
       await logout();
-      history.push("/login");
+      history.push("/news/login");
     } catch {
       setError("Failed to log out");
     }
@@ -33,10 +33,10 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="/" style={{color:'white',fontSize:'3vh'}}>National</Nav.Link>
-              <Nav.Link href="int"style={{color:'white',fontSize:'3vh'}}>Health</Nav.Link>
-              <Nav.Link href="Sport"style={{color:'white',fontSize:'3vh'}}>Sports</Nav.Link>
-              <Nav.Link href="Contact"style={{color:'white',fontSize:'3vh'}}>Contact us</Nav.Link>
+              <Nav.Link href="/news/" style={{color:'white',fontSize:'3vh'}}>National</Nav.Link>
+              <Nav.Link href="/news/int"style={{color:'white',fontSize:'3vh'}}>Health</Nav.Link>
+              <Nav.Link href="/news/Sport"style={{color:'white',fontSize:'3vh'}}>Sports</Nav.Link>
+              <Nav.Link href="/news/Contact"style={{color:'white',fontSize:'3vh'}}>Contact us</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Button variant="outline-success" onClick={handleLogout}>Log out</Button>
