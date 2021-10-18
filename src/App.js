@@ -15,12 +15,12 @@ const App = () => {
       <Router>
         <AuthProvider>
           <Switch>
-            <Route exact path="/signup" component={Signup} />
-            <Route exact path="/login" component={Login} />
-            <PrivateRoute exact path="/" component={National} />
-            <PrivateRoute exact path="/Int" component={International} />
-            <PrivateRoute exact path="/Contact" component={Contact} />
-            <PrivateRoute exact path="/Sport" component={Sport} />
+            <Route exact path="/news/signup" component={Signup} />
+            <Route exact path="/news/login" component={Login} />
+            <PrivateRoute exact path="/news/" component={National} />
+            <PrivateRoute exact path="/news/Int" component={International} />
+            <PrivateRoute exact path="/news/Contact" component={Contact} />
+            <PrivateRoute exact path="/news/Sport" component={Sport} />
           </Switch>
         </AuthProvider>
       </Router>
