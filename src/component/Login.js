@@ -13,7 +13,7 @@ const Login = () => {
     try {
       setError("");
       await login(emailRef.current.value, PasswordRef.current.value);
-      history.push("/news/");
+      history.push("/");
     } catch {
       setError("Failed to sign in!");
     }
@@ -49,7 +49,7 @@ const Login = () => {
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">
-          Need an account ? <Link to="/news/signup">Sign up</Link>
+          Need an account ? <Link to="/signup">Sign up</Link>
         </div>
       </Container>
     </>
