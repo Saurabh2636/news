@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {  Button } from "react-bootstrap";
 import { useAuth } from "./context/AuthContaxt";
-import {useHistory } from "react-router-dom";
+import {Link,useHistory } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
@@ -33,10 +33,10 @@ const Header = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link href="/" style={{color:'white',fontSize:'3vh'}}>National</Nav.Link>
-              <Nav.Link href="/int"style={{color:'white',fontSize:'3vh'}}>Health</Nav.Link>
-              <Nav.Link href="/Sport"style={{color:'white',fontSize:'3vh'}}>Sports</Nav.Link>
-              <Nav.Link href="/Contact"style={{color:'white',fontSize:'3vh'}}>Contact us</Nav.Link>
+              <Link to="/" style={{color:'white',fontSize:'3vh'}} activeStyle={{color: 'red'}}>National</Link>
+              <Link to="/int"style={{color:'white',fontSize:'3vh'}} activeStyle={{color: 'red'}}>Health</Link>
+              <Link to="/Sport"style={{color:'white',fontSize:'3vh'}} activeStyle={{color: 'red'}}>Sports</Link>
+              <Link to="/Contact"style={{color:'white',fontSize:'3vh'}} activeStyle={{color: 'red'}}>Contact us</Link>
             </Nav>
             <Form className="d-flex">
               <Button variant="outline-success" onClick={handleLogout}>Log out</Button>
