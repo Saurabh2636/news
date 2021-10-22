@@ -50,13 +50,13 @@ const Signup = () => {
                          <Form.Label>Confirm Password</Form.Label>
                          <Form.Control type = "password" ref={CPasswordRef} required></Form.Control> 
                      </Form.Group>
-                     <Button className = 'w-100' type='submit'>
+                     <Button className = 'w-100 mt-2' type='submit'>
                          Sign up
                      </Button>
                   </Form>
               </Card.Body>
           </Card>
-          <div className= 'w-100 text-center mt-2'>
+          <div className= 'w-100 text-center ' style={{color:'white'}}>
               Already have an account ?<Link to='/login'> Log in </Link>
           </div>
           </Container>
