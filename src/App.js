@@ -16,22 +16,22 @@ const App = () => {
         <AuthProvider>
           <Switch>
          
-              <Route exact path="/news/signup">
+              <Route exact path="/signup">
                 <Signup  />
               </Route>
-              <Route exact path="/news/login">
+              <Route exact path="/login">
                 <Login  />
               </Route>
-              <PrivateRoute exact path="/news/">
+              <PrivateRoute exact path="/">
                 <National />
               </PrivateRoute>
-              <PrivateRoute exact path="/news/Int">
+              <PrivateRoute exact path="/Int">
                 <International/>
               </PrivateRoute>
-              <PrivateRoute exact path="/news/Contact">
+              <PrivateRoute exact path="/Contact">
                 <Contact />
               </PrivateRoute>
-              <PrivateRoute exact path="/news/Sport">
+              <PrivateRoute exact path="/Sport">
                 <Sport />
               </PrivateRoute>
          
