@@ -28,7 +28,7 @@ const Sports = () => {
           {data.map((item, i) => {
             return (
               <Grid item key={i}>
-                <Card style={{ width: "28rem", height: "28rem" }}>
+                <Card style={{ maxWidth: "28rem", height: "30rem" }}>
                   <Card.Img
                     variant="top"
                     src={item.image}

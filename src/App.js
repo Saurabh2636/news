@@ -22,18 +22,15 @@ const App = () => {
               <Route exact path="/login">
                 <Login  />
               </Route>
-              <PrivateRoute exact path="/">
-                <National />
-              </PrivateRoute>
-              <PrivateRoute exact path="/Int">
-                <International/>
-              </PrivateRoute>
-              <PrivateRoute exact path="/Contact">
-                <Contact />
-              </PrivateRoute>
-              <PrivateRoute exact path="/Sport">
-                <Sport />
-              </PrivateRoute>
+              <PrivateRoute exact path="/" component={National}/>
+              
+              <PrivateRoute exact path="/Int" component={International}/>
+              
+            
+              <PrivateRoute exact path="/Contact" component={Contact}/>
+              
+              <PrivateRoute exact path="/Sport" component={Sport}/>
+              
          
           </Switch>
         </AuthProvider>
