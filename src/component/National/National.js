@@ -28,7 +28,7 @@ const National = () => {
           {data.map((item, i) => {
             return (
               <Grid item key={i}>
-                <Card style={{ maxWidth: "28rem", height: "30rem" }}>
+                <Card className="card" style={{ maxWidth: "28rem", minHeight: "30rem" }}>
                   <Card.Img
                     variant="top"
                     src={item.image}

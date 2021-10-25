@@ -27,7 +27,7 @@ const Signup = () => {
     }
     return (
         <>
-        <Container style={{maxWidth:'80vh', marginTop:'25vh'}}>
+        <Container style={{maxWidth:'80vh', marginTop:'22vh'}}>
           <Card >
               <Card.Body>
                   <h2 className="text-center mb-4">Sign Up</h2>

@@ -26,7 +26,7 @@ const Header = () => {
         <Navbar expand="lg">
           <Container fluid>
             <Navbar.Brand  style={{ color:'white',fontSize: "4vh" }}>
-             News today
+             News today🖐
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
